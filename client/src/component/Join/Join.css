@@ -1,0 +1,82 @@
+.JoinPage {
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.JoinContainer {
+    border: 2px dotted #fff;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+    max-width: 90%;
+    background-color: #111;
+}
+
+.JoinContainer img {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+}
+
+.JoinContainer h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#JoinInput {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+
+.JoinBtn {
+    width: 100%;
+    height: 45px;
+    background-color:rgb(191, 32, 32);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.JoinBtn:hover {
+    background-color: #0077dd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 500px) {
+    .JoinContainer {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #JoinInput,
+    .JoinBtn {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .JoinContainer h3 {
+        font-size: 1.2rem;
+    }
+}
